@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/542/542646.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+    <title>Storages</title>
+</head>
+
+<body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Ключ</th>
+                <th>Значение</th>
+                <th>Удалить</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="form">
+        <div>
+            <label for="keyInput">Ключ:</label>
+            <input type="text" id="keyInput">
+        </div>
+
+        <div>
+            <label for="valueInput">Значение:</label>
+            <input type="text" id="valueInput">
+        </div>
+
+        <div>
+            <label for="storageSelect">Хранилище:</label>
+            <select id="storageSelect">
+                <option value="local">Local Storage</option>
+                <option value="session">Session Storage</option>
+            </select>
+        </div>
+
+        <button onclick="saveItem()">Сохранить</button>
+        <button onclick="clearStorage()">Очистить хранилище</button>
+    </div>
+</body>
+
+</html>
